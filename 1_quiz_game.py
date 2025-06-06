@@ -73,10 +73,8 @@ for i,item in enumerate(quiz_data):
         if is_correct:
             correct_letter = letter_map[i]
 
-    # Get user input
     user_answer = input("Your answer (A/B/C/D): ").strip().upper()
 
-    # Check answer
     if user_answer == correct_letter:
         print("Correct!")
         score += 1
@@ -85,5 +83,4 @@ for i,item in enumerate(quiz_data):
         print("Better Luck Next Time")
         break
     
-# Final score
 print(f"\nYour final score: {score}/{len(quiz_data)}")
